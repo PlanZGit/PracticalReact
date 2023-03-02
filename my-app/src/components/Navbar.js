@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MdDonutSmall } from "react-icons/md";
+import { MdNotificationsActive } from "react-icons/md";
 
 function Navbar() {
   return (
@@ -19,10 +20,22 @@ function Navbar() {
       >
         Practical React
       </p>
-      <NavLink to="/icons">
-        Icons
-        <MdDonutSmall />
-      </NavLink>
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "10px",
+        }}
+      >
+        <NavLink to="/icons">
+          Icons
+          <MdDonutSmall />
+        </NavLink>
+        <NavLink to="/notifications">
+          Notifications
+          <MdNotificationsActive />
+        </NavLink>
+      </nav>
     </div>
   );
 }

@@ -7,26 +7,23 @@ import { CgSortAz } from "react-icons/cg";
 
 function Icons(props) {
   const { color } = props;
-  console.log(color);
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}
+    >
       <IconContext.Provider
-        value={{ color: color ? color : "black", size: "10rem" }}
+        value={{ color: color ? color : "black", size: "200px" }}
       >
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <MdDonutSmall />
-          <ImPen />
-          <ImQuill size="100px" />
-          <ImMusic size="50px" />
-          <FaSortAlphaDown size="25px" />
-          <CgSortAz />
-        </div>
+        <MdDonutSmall />
+        <ImPen />
+        <ImQuill size="100px" />
+        <ImMusic size="50px" />
+        <FaSortAlphaDown size="25px" />
+        <CgSortAz />
       </IconContext.Provider>
     </div>
   );
