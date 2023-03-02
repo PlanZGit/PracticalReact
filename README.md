@@ -9,6 +9,12 @@ React Project
 
 # Icons
 
-React Icons packages
+React Icons packages, a list of icons we can use.
 
     react-icons.netlify.com
+
+# Notifications
+
+Toast Notifications - react-toastify
+
+https://github.com/fkhadra/react-toastify
