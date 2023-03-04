@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { MdDonutSmall } from "react-icons/md";
 import { MdNotificationsActive } from "react-icons/md";
+import { AiOutlineCloudUpload } from "react-icons/ai";
 
 function Navbar() {
   return (
@@ -27,6 +28,11 @@ function Navbar() {
           gap: "10px",
         }}
       >
+        <NavLink to="/upload">
+          Upload
+          <AiOutlineCloudUpload />
+        </NavLink>
+
         <NavLink to="/icons">
           Icons
           <MdDonutSmall />
