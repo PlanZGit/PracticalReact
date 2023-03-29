@@ -72,7 +72,7 @@ function Notification() {
         <>Theme</>
         <select onChange={(e) => setTheme(e.target.value)}>
           <optgroup label="Theme">
-            <option value="colored" selected>
+            <option value="colored" defaultValue>
               colored
             </option>
             <option value="light">light</option>
@@ -86,7 +86,7 @@ function Notification() {
             <option value="success">success</option>
             <option value="warning">warning</option>
             <option value="error">error</option>
-            <option value="default" selected>
+            <option value="default" defaultValue>
               default
             </option>
           </optgroup>

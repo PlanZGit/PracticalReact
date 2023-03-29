@@ -3,22 +3,21 @@ import { NavLink } from "react-router-dom";
 import { MdDonutSmall } from "react-icons/md";
 import { MdNotificationsActive } from "react-icons/md";
 import { AiOutlineCloudUpload } from "react-icons/ai";
+import { BiWindow } from "react-icons/bi";
 
 function Navbar() {
   return (
     <div
       style={{
         marginBottom: "50px",
-      }}
-    >
+      }}>
       <p
         style={{
           fontSize: "50px",
           fontWeight: "bold",
           cursor: "pointer",
           marginBottom: "0px",
-        }}
-      >
+        }}>
         Practical React
       </p>
       <nav
@@ -26,8 +25,7 @@ function Navbar() {
           display: "flex",
           justifyContent: "center",
           gap: "10px",
-        }}
-      >
+        }}>
         <NavLink to="/upload">
           Upload
           <AiOutlineCloudUpload />
@@ -40,6 +38,11 @@ function Navbar() {
         <NavLink to="/notifications">
           Notifications
           <MdNotificationsActive />
+        </NavLink>
+
+        <NavLink to="/modal">
+          Modal
+          <BiWindow />
         </NavLink>
       </nav>
     </div>

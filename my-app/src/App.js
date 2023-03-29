@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Notification from "./components/Notification";
 import UploadFile from "./components/UploadFile";
+import ReactModal from "./components/ReactModal";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="upload" element={<UploadFile />} />
         <Route path="/icons" element={<Icons />} />
         <Route path="/notifications" element={<Notification />} />
+        <Route path="modal" element={<ReactModal />} />
       </Routes>
     </div>
   );

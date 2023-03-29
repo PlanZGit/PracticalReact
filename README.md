@@ -18,3 +18,7 @@ React Icons packages, a list of icons we can use.
 Toast Notifications - react-toastify
 
     https://github.com/fkhadra/react-toastify
+
+# Modal
+
+https://reactcommunity.org/react-modal/
