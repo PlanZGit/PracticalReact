@@ -4,6 +4,7 @@ import { MdDonutSmall } from "react-icons/md";
 import { MdNotificationsActive } from "react-icons/md";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import { BiWindow } from "react-icons/bi";
+import { GrTooltip } from "react-icons/gr";
 
 function Navbar() {
   return (
@@ -43,6 +44,11 @@ function Navbar() {
         <NavLink to="/modal">
           Modal
           <BiWindow />
+        </NavLink>
+
+        <NavLink to="/Tooltip">
+          Tooltip
+          <GrTooltip />
         </NavLink>
       </nav>
     </div>

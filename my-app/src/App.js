@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Notification from "./components/Notification";
 import UploadFile from "./components/UploadFile";
 import ReactModal from "./components/ReactModal";
+import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/icons" element={<Icons />} />
         <Route path="/notifications" element={<Notification />} />
         <Route path="modal" element={<ReactModal />} />
+        <Route path="Tooltip" element={<Tooltip />} />
       </Routes>
     </div>
   );
