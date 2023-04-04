@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import "../components/ReactModal.css";
 
 Modal.setAppElement("#root");
 
 const ReactModal = () => {
   const [modal, setModal] = useState(false);
+
   return (
     <div>
+      Note : Opening animation/transition works <br /> but Closing
+      animation/transition needs a className changing <br />
       <button
         onClick={() => {
           setModal(!modal);
@@ -14,19 +18,10 @@ const ReactModal = () => {
         Open Modal
       </button>
       <Modal
-        isOpen={modal}
+        isOpen={true}
         onRequestClose={() => setModal(!modal)}
-        style={{
-          overlay: {
-            // width: "300px",
-            // height: "300px",
-            // left: "50%",
-            // top: "50%",
-            // transform: "translate(-50%, -50%)",
-            // backgroundColor: "red",
-          },
-          content: { color: "orange" },
-        }}>
+        className={modal ? "isOpen" : "isClose"}
+        overlayClassName={modal ? "overlayIsOpen" : "overlayIsClose"}>
         <h1>Title</h1>
 
         <p>ParaGragh</p>

@@ -22,3 +22,7 @@ Toast Notifications - react-toastify
 # Modal
 
 https://reactcommunity.org/react-modal/
+
+# Tooltip
+
+https://github.com/atomiks/tippyjs-react
