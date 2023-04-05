@@ -6,6 +6,8 @@ import Notification from "./components/Notification";
 import UploadFile from "./components/UploadFile";
 import ReactModal from "./components/ReactModal";
 import Tooltip from "./components/Tooltip";
+import Countup from "./components/Countup";
+import ReactIdleTimer from "./components/idletimer/ReactIdleTimer";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <Route path="/icons" element={<Icons />} />
         <Route path="/notifications" element={<Notification />} />
         <Route path="modal" element={<ReactModal />} />
-        <Route path="Tooltip" element={<Tooltip />} />
+        <Route path="tooltip" element={<Tooltip />} />
+        <Route path="countup" element={<Countup />} />
+        <Route path="idletimer" element={<ReactIdleTimer />} />
       </Routes>
     </div>
   );

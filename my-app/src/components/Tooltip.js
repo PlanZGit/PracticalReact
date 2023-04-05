@@ -6,6 +6,7 @@ import "./Tooltip.css";
 const Tooltip = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "50px" }}>
+      @tippyjs/react
       <div>
         Tippys has auto positioning, top,left,down,right <br />
         <Tippy
@@ -31,9 +32,8 @@ const Tooltip = () => {
           <button>Button</button>
         </Tippy>
       </div>
-
+      self built
       <div className="tooltip">
-        self built
         <button className="btn">Button</button>
         <span>Hello, Build from CSS</span>
       </div>

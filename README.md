@@ -25,4 +25,14 @@ https://reactcommunity.org/react-modal/
 
 # Tooltip
 
+@tippyjs/react
+
 https://github.com/atomiks/tippyjs-react
+
+# Countup
+
+https://www.npmjs.com/package/react-countup
+
+# Idle Timer
+
+https://idletimer.dev/

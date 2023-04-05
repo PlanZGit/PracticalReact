@@ -2,9 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { MdDonutSmall } from "react-icons/md";
 import { MdNotificationsActive } from "react-icons/md";
-import { AiOutlineCloudUpload } from "react-icons/ai";
-import { BiWindow } from "react-icons/bi";
-import { GrTooltip } from "react-icons/gr";
+import { AiOutlineCloudUpload, AiOutlineTool } from "react-icons/ai";
+import { BiWindow, BiTimer } from "react-icons/bi";
 
 function Navbar() {
   return (
@@ -26,6 +25,7 @@ function Navbar() {
           display: "flex",
           justifyContent: "center",
           gap: "10px",
+          flexWrap: "wrap",
         }}>
         <NavLink to="/upload">
           Upload
@@ -46,9 +46,19 @@ function Navbar() {
           <BiWindow />
         </NavLink>
 
-        <NavLink to="/Tooltip">
+        <NavLink to="/tooltip">
           Tooltip
-          <GrTooltip />
+          <AiOutlineTool />
+        </NavLink>
+
+        <NavLink to="/countup">
+          countup
+          <BiTimer />
+        </NavLink>
+
+        <NavLink to="/idletimer">
+          Idletimer
+          <BiTimer />
         </NavLink>
       </nav>
     </div>

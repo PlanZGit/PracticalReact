@@ -45,10 +45,10 @@ function Notification() {
   const dismissAll = () => toast.dismiss();
   return (
     <div>
+      react-toastify
       <div>
         <input type="text" placeholder="Input" ref={inputRef}></input>
       </div>
-
       <button onClick={notify}>Notify!</button>
       <button onClick={notify} id="icon">
         Notify! Custom Icon
@@ -67,7 +67,6 @@ function Notification() {
         pauseOnHover
         theme={theme}
       />
-
       <div>
         <>Theme</>
         <select onChange={(e) => setTheme(e.target.value)}>

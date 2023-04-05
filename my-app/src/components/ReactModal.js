@@ -9,29 +9,32 @@ const ReactModal = () => {
 
   return (
     <div>
-      Note : Opening animation/transition works <br /> but Closing
-      animation/transition needs a className changing <br />
-      <button
-        onClick={() => {
-          setModal(!modal);
-        }}>
-        Open Modal
-      </button>
-      <Modal
-        isOpen={true}
-        onRequestClose={() => setModal(!modal)}
-        className={modal ? "isOpen" : "isClose"}
-        overlayClassName={modal ? "overlayIsOpen" : "overlayIsClose"}>
-        <h1>Title</h1>
-
-        <p>ParaGragh</p>
+      react-modal
+      <div>
         <button
           onClick={() => {
             setModal(!modal);
           }}>
-          Close
+          Open Modal
         </button>
-      </Modal>
+        <Modal
+          isOpen={true}
+          onRequestClose={() => setModal(!modal)}
+          className={modal ? "isOpen" : "isClose"}
+          overlayClassName={modal ? "overlayIsOpen" : "overlayIsClose"}>
+          <h1>Title</h1>
+
+          <p>ParaGragh</p>
+          <button
+            onClick={() => {
+              setModal(!modal);
+            }}>
+            Close
+          </button>
+        </Modal>
+      </div>
+      Note : Opening animation/transition works <br /> Closing
+      animation/transition needs a className changing
     </div>
   );
 };
