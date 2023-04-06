@@ -4,6 +4,9 @@ import { MdDonutSmall } from "react-icons/md";
 import { MdNotificationsActive } from "react-icons/md";
 import { AiOutlineCloudUpload, AiOutlineTool } from "react-icons/ai";
 import { BiWindow, BiTimer } from "react-icons/bi";
+import { CgColorPicker } from "react-icons/cg";
+import { BsCreditCard } from "react-icons/bs";
+import { CiCalendarDate } from "react-icons/ci";
 
 function Navbar() {
   return (
@@ -59,6 +62,21 @@ function Navbar() {
         <NavLink to="/idletimer">
           Idletimer
           <BiTimer />
+        </NavLink>
+
+        <NavLink to="/colorpicker">
+          Colorpicker
+          <CgColorPicker />
+        </NavLink>
+
+        <NavLink to="/creditcards">
+          Creditcard
+          <BsCreditCard />
+        </NavLink>
+
+        <NavLink to="/datepicker">
+          Datepicker
+          <CiCalendarDate />
         </NavLink>
       </nav>
     </div>

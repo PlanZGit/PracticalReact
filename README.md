@@ -36,3 +36,15 @@ https://www.npmjs.com/package/react-countup
 # Idle Timer
 
 https://idletimer.dev/
+
+# Color Picker
+
+https://casesandberg.github.io/react-color/
+
+# Credit Cards
+
+https://www.npmjs.com/package/react-credit-cards
+
+# Date Picker
+
+https://www.npmjs.com/package/react-datepicker

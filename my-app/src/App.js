@@ -8,6 +8,9 @@ import ReactModal from "./components/ReactModal";
 import Tooltip from "./components/Tooltip";
 import Countup from "./components/Countup";
 import ReactIdleTimer from "./components/idletimer/ReactIdleTimer";
+import Colorpicker from "./components/Colorpicker";
+import Creditcard from "./components/Creditcard";
+import Datepicker from "./components/Datepicker";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="tooltip" element={<Tooltip />} />
         <Route path="countup" element={<Countup />} />
         <Route path="idletimer" element={<ReactIdleTimer />} />
+        <Route path="colorpicker" element={<Colorpicker />} />
+        <Route path="creditcards" element={<Creditcard />} />
+        <Route path="datepicker" element={<Datepicker />} />
       </Routes>
     </div>
   );
