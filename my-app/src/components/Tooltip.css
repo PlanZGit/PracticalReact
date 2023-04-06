@@ -1,0 +1,35 @@
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip span {
+  position: absolute;
+  top: -43px;
+  background-color: rgb(48, 48, 48);
+  border-radius: 4px;
+  padding: 7px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+
+  font-size: small;
+}
+.tooltip span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(45deg);
+  z-index: -1;
+  background-color: rgb(48, 48, 48);
+
+  pointer-events: none;
+}
+.tooltip .btn:hover + span {
+  opacity: 1;
+  transition: 0.25s;
+}

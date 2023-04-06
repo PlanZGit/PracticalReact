@@ -17,4 +17,34 @@ React Icons packages, a list of icons we can use.
 
 Toast Notifications - react-toastify
 
-https://github.com/fkhadra/react-toastify
+    https://github.com/fkhadra/react-toastify
+
+# Modal
+
+https://reactcommunity.org/react-modal/
+
+# Tooltip
+
+@tippyjs/react
+
+https://github.com/atomiks/tippyjs-react
+
+# Countup
+
+https://www.npmjs.com/package/react-countup
+
+# Idle Timer
+
+https://idletimer.dev/
+
+# Color Picker
+
+https://casesandberg.github.io/react-color/
+
+# Credit Cards
+
+https://www.npmjs.com/package/react-credit-cards
+
+# Date Picker
+
+https://www.npmjs.com/package/react-datepicker
