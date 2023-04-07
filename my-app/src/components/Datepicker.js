@@ -13,16 +13,24 @@ const Datepicker = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignContent: "center",
+        width: "300px",
+        margin: "auto",
+      }}>
       <div>react-datepicker VS input type="date"</div>
       input type="date" <input type="date" id="theDate"></input>
-      <div>
+      <div style={{ width: "300px" }}>
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           dateFormat={"MM/dd/yyyy"}
           maxDate={new Date()}
-          filterDate={(date) => date.getDay() != 6 && date.getDay() != 0}
+          filterDate={(date) => date.getDay() !== 6 && date.getDay() !== 0}
           isClearable
           showYearDropdown
           scrollableMonthYearDropdown

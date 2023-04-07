@@ -11,32 +11,56 @@
 
 .ReactModal__Content {
   color: orange;
-  position: absolute;
-  overflow: "auto";
+  overflow: auto;
   outline: none;
-  top: 0px;
-  bottom: 0px;
-  right: -45px;
+  position: absolute;
+
   left: auto;
   border: 1px solid #ccc;
   background: #fff;
   padding: 20px;
 
-  width: 0px;
   transition: 1000ms ease-in-out;
 }
 
 .isOpen {
   width: 250px;
+  right: -45px;
+
+  top: 0px;
+  bottom: 0px;
 }
 .isClose {
+  width: 0px;
+  right: -45px;
+
+  top: 0px;
+  bottom: 0px;
   visibility: hidden;
 }
 
 .overlayIsOpen {
-  background-color: "rgba(1,1,1,0)";
+  background-color: rgba(1, 1, 1, 0.1);
 }
 .overlayIsClose {
   pointer-events: none;
   transition: 1s;
+}
+
+.isOpen2 {
+  width: 300px;
+  height: 300px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.isClose2 {
+  width: 0px;
+  height: 0px;
+
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

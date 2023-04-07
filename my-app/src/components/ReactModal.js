@@ -10,6 +10,25 @@ const ReactModal = () => {
   return (
     <div>
       react-modal
+      <Modal
+        isOpen={true}
+        onRequestClose={() => setModal(!modal)}
+        className={modal ? "isOpen2" : "isClose2"}
+        overlayClassName={modal ? "overlayIsOpen" : "overlayIsClose"}>
+        {modal ? (
+          <div>
+            <h1>Title</h1>
+            <p>ParaGragh</p>
+          </div>
+        ) : null}
+
+        <button
+          onClick={() => {
+            setModal(!modal);
+          }}>
+          Close
+        </button>
+      </Modal>
       <div>
         <button
           onClick={() => {
@@ -33,6 +52,7 @@ const ReactModal = () => {
           </button>
         </Modal>
       </div>
+      <div></div>
       Note : Opening animation/transition works <br /> Closing
       animation/transition needs a className changing
     </div>

@@ -11,6 +11,8 @@ import ReactIdleTimer from "./components/idletimer/ReactIdleTimer";
 import Colorpicker from "./components/Colorpicker";
 import Creditcard from "./components/Creditcard";
 import Datepicker from "./components/Datepicker";
+import { Videoplayer } from "./components/Videoplayer";
+import Loadingspinner from "./components/Loadingspinner";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="colorpicker" element={<Colorpicker />} />
         <Route path="creditcards" element={<Creditcard />} />
         <Route path="datepicker" element={<Datepicker />} />
+        <Route path="videoplayer" element={<Videoplayer />} />
+        <Route path="loadingspinner" element={<Loadingspinner />} />
       </Routes>
     </div>
   );

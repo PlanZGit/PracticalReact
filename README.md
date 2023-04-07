@@ -1,11 +1,9 @@
 # PracticalReact
 
-React Project
+React Project Tools
 
-- Icons
-- Modal
-- Tooltip
-- Tables
+Find tools.
+https://www.npmjs.com/
 
 # Icons
 
@@ -48,3 +46,20 @@ https://www.npmjs.com/package/react-credit-cards
 # Date Picker
 
 https://www.npmjs.com/package/react-datepicker
+
+# Presentation Deck MDX
+
+Not needed.
+https://mdxjs.com/
+
+# Video Player
+
+Use HTML iframe / video tag
+
+# Loading Indicators
+
+Not needed.
+https://github.com/davidhu2000/react-spinners
+https://www.davidhu.io/react-spinners/
+
+# Charts

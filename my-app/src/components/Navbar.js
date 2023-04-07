@@ -78,6 +78,21 @@ function Navbar() {
           Datepicker
           <CiCalendarDate />
         </NavLink>
+
+        <NavLink to="/videoplayer">
+          Videoplayer
+          <CiCalendarDate />
+        </NavLink>
+
+        <NavLink to="/loadingspinner">
+          Loadingspinner
+          <CiCalendarDate />
+        </NavLink>
+
+        <NavLink to="/charts">
+          Charts
+          <CiCalendarDate />
+        </NavLink>
       </nav>
     </div>
   );

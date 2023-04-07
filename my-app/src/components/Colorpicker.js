@@ -34,16 +34,24 @@ const Colorpicker = () => {
             justifyContent: "center",
             gap: "20px",
           }}>
+          <div
+            style={{
+              position: "fixed",
+              left: "0",
+              bottom: "0",
+              zIndex: "2",
+            }}>
+            <SketchPicker
+              color={color}
+              onChange={(updatedColor) => setColor(updatedColor.hex)}
+            />
+          </div>
           <ChromePicker
             color={color}
             onChange={(updatedColor) => setColor(updatedColor.hex)}
             onChangeComplete={handleChangeComplete}
-            disableAlpha={false}
           />
-          <SketchPicker
-            color={color}
-            onChange={(updatedColor) => setColor(updatedColor.hex)}
-          />
+
           <BlockPicker
             color={color}
             onChange={(updatedColor) => setColor(updatedColor.hex)}
